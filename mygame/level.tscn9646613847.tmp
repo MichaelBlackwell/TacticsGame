@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3lsabgp6i083"]
+
+[ext_resource type="Script" uid="uid://chccusylw82g0" path="res://squad.gd" id="1_u52ul"]
+
+[node name="Level" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[node name="Units" type="Node2D" parent="."]
+
+[node name="PlayerSquads" type="Node2D" parent="Units"]
+
+[node name="SquadA" type="Node2D" parent="Units/PlayerSquads"]
+script = ExtResource("1_u52ul")
+
+[node name="SquadB" type="Node2D" parent="Units/PlayerSquads"]
+
+[node name="EnemySquads" type="Node2D" parent="Units"]
+
+[node name="EnemySquadA" type="Node2D" parent="Units/EnemySquads"]
+
+[node name="UI" type="Node2D" parent="."]
